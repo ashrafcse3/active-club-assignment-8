@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://www.fitness-superstore.co.uk/media/catalog/product/cache/d8461ea17cb152a3c0885cce0c19f1fe/3/5/35189_0.jpg",
+        "name": "Dumbbell",
+        "timeRequired": 40,
+        "addToList": false
+    },
+    {
+        "id": 2,
+        "img": "https://www.fitness-superstore.co.uk/media/catalog/product/cache/d8461ea17cb152a3c0885cce0c19f1fe/4/0/40416_0.jpg",
+        "name": "Kettlebells",
+        "timeRequired": 30,
+        "addToList": false
+    },
+    {
+        "id": 3,
+        "img": "https://www.fitness-superstore.co.uk/media/catalog/product/cache/d8461ea17cb152a3c0885cce0c19f1fe/4/0/40352_0.jpg",
+        "name": "Curl Bar",
+        "timeRequired": 40,
+        "addToList": false
+    },
+    {
+        "id": 4,
+        "img": "https://www.fitness-superstore.co.uk/media/catalog/product/cache/d8461ea17cb152a3c0885cce0c19f1fe/3/6/36370_0.jpg",
+        "name": "WEIGHT PLATE",
+        "timeRequired": 40,
+        "addToList": false
+    },
+    {
+        "id": 5,
+        "img": "https://www.fitness-superstore.co.uk/media/catalog/product/cache/d8461ea17cb152a3c0885cce0c19f1fe/2/1/21952_0.jpg",
+        "name": "ROWING",
+        "timeRequired": 40,
+        "addToList": false
+    },
+    {
+        "id": 6,
+        "img": "https://www.fitness-superstore.co.uk/media/catalog/product/cache/d8461ea17cb152a3c0885cce0c19f1fe/3/3/33262_0.jpg",
+        "name": "Treadmill",
+        "timeRequired": 40,
+        "addToList": false
+    }
+]
