@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { addToDb, getStoredTime } from '../../utilities/fakedb';
 import './Options.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Options = (props) => {
     const [breakTime, setBreakTime] = useState(0);
@@ -65,6 +67,18 @@ const Options = (props) => {
                     <p>{breakTime} seconds</p>
                 </div>
             </div>
+            <button onClick={() => toast("I made a toast with react toastify")} className='activity-button'>Activity Completed</button>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 };
