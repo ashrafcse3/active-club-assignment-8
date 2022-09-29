@@ -3,7 +3,7 @@ const addToDb = time => {
 }
 
 const getStoredTime = () => {
-    let breakTime;
+    let breakTime = 0;
     const storedTime = localStorage.getItem('break-time');
     if (storedTime) {
         breakTime = JSON.parse(storedTime);
