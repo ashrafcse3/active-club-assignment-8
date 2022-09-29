@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     background-color: rgb(236, 236, 236);
+}
+
+.exercises-container {
     padding: 60px;
 }
 
@@ -9,4 +12,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.options-container {
+    background-color: white;
+    position: sticky;
+    top: 0;
 }
