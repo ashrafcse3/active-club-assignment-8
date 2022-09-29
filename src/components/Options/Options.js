@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { addToDb, getStoredTime } from '../../utilities/fakedb';
 import './Options.css';
 
 const Options = (props) => {
+    const [breakTime, setBreakTime] = useState(0);
+
+    useEffect(() => {
+        const storedBreakTime = getStoredTime();
+        setBreakTime(storedBreakTime);
+    }, []);
+
+    const handleBreakTime = time => {
+        setBreakTime(time);
+        addToDb(time);
+    }
+
     return (
         <div className='options-container'>
             <div className="profile">
@@ -34,11 +47,11 @@ const Options = (props) => {
             <div className='break-container'>
                 <h3>Add A Break</h3>
                 <div className='break-seconds'>
-                    <p>10s</p>
-                    <p>20s</p>
-                    <p>30s</p>
-                    <p>40s</p>
-                    <p>50s</p>
+                    <p onClick={() => handleBreakTime(10)}>10s</p>
+                    <p onClick={() => handleBreakTime(20)}>20s</p>
+                    <p onClick={() => handleBreakTime(30)}>30s</p>
+                    <p onClick={() => handleBreakTime(40)}>40s</p>
+                    <p onClick={() => handleBreakTime(50)}>50s</p>
                 </div>
             </div>
             <div className="exercise-details">
@@ -49,7 +62,7 @@ const Options = (props) => {
                 </div>
                 <div className='time-container'>
                     <h4>Break time</h4>
-                    <p>15 seconds</p>
+                    <p>{breakTime} seconds</p>
                 </div>
             </div>
         </div>
