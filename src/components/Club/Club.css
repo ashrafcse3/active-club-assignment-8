@@ -19,3 +19,33 @@
     position: sticky;
     top: 0;
 }
+
+@media screen and (max-width: 1413px) and (min-width: 1068px) {
+    .exercises {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 20px; */
+    }
+}
+
+@media screen and (max-width: 1068px) and (min-width: 711px) {
+    .exercises {
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 20px; */
+    }
+}
+
+@media screen and (max-width: 711px) and (min-width: 499px) {
+    .club-container {
+        grid-template-columns: 1fr;
+    }
+
+    .exercises {
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 20px; */
+    }
+
+    .options-container {
+        background-color: yellow;
+        margin: 60px;
+    }
+}
