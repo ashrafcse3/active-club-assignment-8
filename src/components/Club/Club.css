@@ -29,6 +29,7 @@
 @media screen and (max-width: 1068px) and (min-width: 711px) {
     .exercises {
         grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     }
 }
 
